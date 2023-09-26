@@ -1,0 +1,74 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+body ::selection {
+  background: #f3c681;
+  color: black;
+}
+
+.employees-edit {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 20px 20px;
+  border-radius: 8px;
+}
+.employees-edit form {
+  width: 100%;
+}
+.employees-filter {
+  width: 100%;
+}
+.employees-filter form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+@media (max-width: 765px) {
+  .employees-filter form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.employees-filter form .ant-form-item {
+  margin-inline-end: 0;
+  margin: 0;
+}
+.employees-wrap {
+  width: 100%;
+  max-width: 765px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 20px 20px;
+  border-radius: 6px;
+}
+.employees-layout {
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  background: url("/img/back.jpg");
+}
+.employees-list {
+  width: 100%;
+}
+.employees-list_item {
+  flex-wrap: wrap;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=common.css.map */
